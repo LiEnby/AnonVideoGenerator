@@ -44,7 +44,12 @@ namespace WeAreAnonymous
             sfd.FileName = "We Are Legion.mp4";
             sfd.DefaultExt = "mp4";
             sfd.Filter = "MPEG-4 Videos|*.mp4";
-            sfd.ShowDialog();
+            DialogResult res = sfd.ShowDialog();
+            if (res != DialogResult.OK)
+            {
+                CreateVideo.Enabled = true;
+                return;
+            }
 
             string outputPath = sfd.FileName;
 

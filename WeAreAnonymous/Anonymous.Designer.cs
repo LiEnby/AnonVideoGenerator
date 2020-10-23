@@ -78,6 +78,7 @@
             // 
             // CurrentProcess
             // 
+            this.CurrentProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.CurrentProcess.AutoSize = true;
             this.CurrentProcess.Location = new System.Drawing.Point(12, 585);
             this.CurrentProcess.Name = "CurrentProcess";
